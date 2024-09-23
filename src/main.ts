@@ -16,7 +16,8 @@ bootstrapApplication(AppComponent, {
     provideRouter(appRoutes),
     provideAnimations(),
     provideStore({ contacts: contactsReducer }),
-    importProvidersFrom(MatDialogModule)
+    importProvidersFrom(MatDialogModule),
+    provideAnimations()
 ]
 })
 .catch(err => console.error(err));
